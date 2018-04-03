@@ -80,13 +80,20 @@ while (a!=x){
     }
 
     //5
-    int x;
-    cout << "ingrese numero: "; cin>>x;
-    if (x>1 and x%2!=0){
-       cout << "Es numero primo";
-    }else{
-      cout << "No es numero primo";
-    }
+     int y=0;
+     int x;
+         cout<<"Ingrese numero"; cin>>x;
+      
+         for(int i=1;i<(n+1);i++){
+         if(x%i==0){
+             y++;
+            }
+         }
+         if(y!=2){
+              cout<<"No es Primo";
+            }else{
+                cout<<"Si es Primo";
+         }
 
     //6
     int x;
@@ -123,11 +130,11 @@ while (a!=x){
 
     //9
       int x;
-      cout << "ingresa un año: "; cin>>x;
+      cout << "ingresa un aÃ±o: "; cin>>x;
       if (x%4==0){
-         cout << "es año bisiesto";
+         cout << "es aÃ±o bisiesto";
       }else{
-        cout << "es un año comun";
+        cout << "es un aÃ±o comun";
       }
 
 
