@@ -131,11 +131,13 @@ while (a!=x){
     //9
       int x;
       cout << "ingresa un año: "; cin>>x;
-      if (x%4==0){
-         cout << "es año bisiesto";
-      }else{
-        cout << "es un año comun";
-      }
+    if (x%4==0 || x%400==0){
+        if(x%100!=0)
+            cout<<"es año bisiesto"<<endl;
+        else{
+        cout<<"es un año comun"<<endl;
+        }
+        }
 
 
     //10
