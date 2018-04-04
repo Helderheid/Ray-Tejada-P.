@@ -97,18 +97,22 @@ while (a!=x){
 
     //6
     int x;
+    int count=1;
+    int primo=2;
+    int y=1;
     cout << "ingrese numero: "; cin>>x;
-    int y=x;
-    for (int i=0; i<=x;i++){
-    y=y-1;
-    if(y%2!=0){
-      cout << y<<"---";
-      if (y==1){
-        i=x;
-      }
+    while(count <= x){
+     if(primo % d == 0){
+      cout << primo << ",";
+      cont++;
     }
+    d=2;
+    primo++;
+    }
+    else{d++;}}
+    
+    
 
-    }
 
     //7
         int x;
