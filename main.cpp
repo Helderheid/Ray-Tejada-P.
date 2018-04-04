@@ -6,22 +6,14 @@ int main() {
  /*
   int x;
   cout << "ingrese edad"; cin>>x;
-  if (x<=0 or x>102){
-  cout << "no es una edad validad";}
-
-  else if (x>0 and x<17){
-  cout << "Es una persona menor de edad";}
-
-  else if (x>17 and x<101){
-  cout << "Es una persona mayor de edad";}
+  (x<=0 or x>102)? cout<<"no es una edad validad"<<endl:cout<<"edad valida"<<endl;
+  (x<18)? cout<<"Es una persona menor de edad ":cout<<"Es una persona mayor de edad ";
 
 //2
-
 int x;
 int a=1;
 int aux=0;
 cout << "ingrese un numero: "; cin>>x;
-
 while (a!=x){
  aux=a;
  cout <<aux<< ",";
@@ -29,39 +21,24 @@ while (a!=x){
  if (a==x){
      cout << x;
      break;
-}
-
+     }
 }
 
 
 
   //3
+    int a,b,c;
+    int promedio;
+    cout<<"ingrese un numero: "; cin>>a;
+    cout<<"ingrese un numero: "; cin>>b;
+    cout<<"ingrese un numero: "; cin>>c;
 
-   int mayor=-99999;
-     int menor=99999;
-     int suma=0;
-     int promedio=0;
-     int x=0;
-     int a=0;
-     for (int i = 0; i <= 4; i++){
-        //cout << "menor "<<menor << " x " <<x << " mayor " <<mayor <<endl;
+    (a>=b && a>=c)?cout<<"mayor: "<<a<<endl:(b>=c)?cout<<"mayor: "<<b<<endl:cout<<"mayor: "<<c<<endl;
+    (a<=b && a<=c)?cout<<"menor: "<<a<<endl:(b<=c)?cout<<"menor: "<<b<<endl:cout<<"menor: "<<c<<endl;
 
-        cout << "ingresa un numero: ";cin>>x;
-        suma = suma +x;
-        a=a+1;
-
-        if (x>mayor){
-            mayor=x;
-            }
-        if (x<menor){
-            menor=x;
-        }
-     }
-      promedio = suma/a;
-
-      cout << "el promedio es: "<< promedio <<endl;
-      cout << "el mayor es: "<<  mayor <<endl;
-      cout << "el menor es: "<<  menor <<endl;
+    promedio =(a+b+c)/3;
+    cout<<"el promedio es: "<<promedio<<endl;
+    
 
 
     //4
@@ -131,6 +108,37 @@ while (a!=x){
     z=z/10;
     b = 0;
     }
+    
+    //8
+    int x;
+    int y=10000;
+    int z=100000;
+    int w=10;
+    int t=1;
+    int b;
+    int a;
+    int c;
+    cout << "ingresa un numero: ";
+    cin>>x;
+    for(int i=0;i<=1;i++){
+    b = x%z/y;
+    a = x%w/t;
+     if (a==b){
+       c+=1;
+     }
+    y=y/10;
+    z=z/10;
+    w=w*10;
+    t=t*10;
+    b = 0;
+    a= 0;
+    }
+    if (c==2){
+      cout << "palindrome";
+    }else{
+      cout << "no es palindrome";
+    }
+
 
     //9
       int x;
